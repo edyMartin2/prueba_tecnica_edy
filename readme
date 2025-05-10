@@ -1,7 +1,11 @@
 1. docker-compose build
 2. docker-compose up
 
-# Ejecucion de scripts
+# Ejecucion de 
 
 1. docker-compose exec app bash
-2. python scripts/{script_name}.py
+2. cd scripts
+4. python load_data.py
+5. python extract_data.py
+6. python transform_data.py
+7. python dispersion_to_table.py

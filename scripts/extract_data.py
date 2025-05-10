@@ -11,12 +11,12 @@ def extarct_db():
     here we write the code
     """
     db = db_connection()
-    output_path = os.path.join(os.path.dirname(__file__), "data", "extracted_data.csv")
-    output_path_parquet = os.path.join(os.path.dirname(__file__), "data", "extracted_data.parquet")
+    cv_output_path = os.path.join(os.path.dirname(__file__), "data", "extracted_data.csv")
+    parquet_output_path = os.path.join(os.path.dirname(__file__), "data", "extracted_data.parquet")
     data_frame = pd.read_sql('SELECT * FROM raw_data', db)
+    os.makedirs(os.path.dirname(cv_output_path), exist_ok=True)
+    data_frame.to_csv(cv_output_path, index=False)
+    data_frame.to_parquet(parquet_output_path, index=False)
     
-    os.makedirs(os.path.dirname(output_path), exist_ok=True)
-    data_frame.to_csv(output_path, index=False)
-    data_frame.to_csv(output_path, index=False)
-    data_frame.to_parquet(output_path_parquet, index=False)
+    return cv_output_path, parquet_output_path
 extarct_db()

@@ -2,11 +2,12 @@
 this is the main file
 """
 from flask import Flask
-app = Flask(__name__)
+from controllers.blueprints.calculate import CALCULATE_BP
 
-@app.route('/upload_batch')
-def upload_batch():
-    return []
+PATH = "/v0/"
+
+app = Flask(__name__)
+app.register_blueprint(CALCULATE_BP, url_prefix=f"""{PATH}""")
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5001)

@@ -2,7 +2,7 @@
 this file read all data from db and return a csv file
 """
 import pandas as pd
-from utils.db import db_connection
+from db.db import db_connection
 import os
 
 

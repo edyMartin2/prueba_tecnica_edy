@@ -2,7 +2,7 @@
 this file read a csv and upload information to a db
 """
 import pandas as pd
-from utils.db import db_connection
+from db.db import db_connection
 
 def load_data():
     """

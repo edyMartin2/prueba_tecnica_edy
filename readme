@@ -1,0 +1,7 @@
+1. docker-compose build
+2. docker-compose up
+
+# Ejecucion de scripts
+
+1. docker-compose exec app bash
+2. python scripts/{script_name}.py

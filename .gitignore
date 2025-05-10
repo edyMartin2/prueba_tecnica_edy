@@ -1,0 +1,82 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+env.bak/
+venv.bak/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# Pytest / coverage
+.cache/
+.pytest_cache/
+.coverage
+coverage.xml
+htmlcov/
+
+# mypy / pylint / flake8
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pylint.d/
+.pyre/
+
+# PyCharm / VSCode / other IDEs
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Distribution / packaging
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Logs
+*.log
+
+# dotenv / secrets
+.env
+.env.*
+
+# Docker
+*.pid
+docker-compose.override.yml
+
+# Unit test / test data
+test-output/
+tests/__pycache__/
+nosetests.xml
+test-results.xml
+
+# SQLite database
+*.sqlite3
+
+# VS Code settings
+.vscode/
+
+# MacOS / Windows
+.DS_Store
+Thumbs.db

@@ -9,3 +9,9 @@
 5. python extract_data.py
 6. python transform_data.py
 7. python dispersion_to_table.py
+
+# ejecucion de api
+
+1. cd api 
+2. docker-compose build
+3. docker-compose up

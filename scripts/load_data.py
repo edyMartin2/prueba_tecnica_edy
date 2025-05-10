@@ -3,6 +3,8 @@ this file read a csv and upload information to a db
 """
 import pandas as pd
 from db.db import db_connection
+import pytest
+from unittest.mock import patch, MagicMock
 
 def load_data():
     """
